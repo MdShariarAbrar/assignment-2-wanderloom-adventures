@@ -6,4 +6,203 @@
     font-family: 'Mulish', sans-serif;
 }
 
+/* ==================================================================
+======shared style for full webpage==================================
+===================================================================== */
+.title-primary {
 
+}
+
+.description-primary {
+
+}
+
+.btn-primary {
+
+}
+
+
+/* ==================================
+header section style================ */
+header {
+    max-width: 85%;
+    margin: 0 auto;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-title {
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+.logo-title span {
+    color: #FF5400;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul li {
+    list-style: none;
+    margin-left: 44px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #424247;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.menu .orange {
+    color: #FF5400;
+    font-weight: 700;
+}
+
+.menu i {
+    display: none;
+}
+
+/*===============================
+ hero section================== */
+
+ 
+ .hero {
+    background: url("../Images/seabridge.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding:106px 0;
+    margin: auto;
+    align-items: center;
+    border-radius: 16px;
+    
+ }
+
+ .hero-text{
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 48px;
+ }
+
+.hero-title{
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.hero-description {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+.hero-form {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+
+
+}
+.h-f, #when, #type {
+    padding: 16px;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 1rem;
+    font-weight: 400;
+    border: 0;
+    border-radius: 8px;
+    background: #FFF;
+    width: 180px;
+}
+.hero-btn {
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 16px;
+    border: 0;
+    border-radius: 8px;
+    background: #FF5400;
+    width: 180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================
+=====responsive media query for mobile device======================= */
+
+@media screen and (max-width:600px) {
+      
+    header {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    /* navbar   */
+    .logo-title{
+        font-size: 1.3rem;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu i {
+        display: inline;
+    }
+
+    /* hero section */
+    .hero{
+        padding: 32px 16px;
+    }
+
+    .hero-text{
+        max-width: 100%;
+        margin: 0;
+
+    }
+    .hero-title{
+        font-size: 1.3rem;
+    }
+    .hero-description{
+        font-size: 0.9rem;
+
+    }
+    .hero-form{
+        flex-direction: column;
+        gap: 8px;
+    }
+    #when, #type, .hero-btn{
+        width: 100%;
+    }
+    .h-f{
+        width: 90%;
+    }
+}
