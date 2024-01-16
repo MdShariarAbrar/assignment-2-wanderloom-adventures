@@ -411,6 +411,22 @@ main {
 
 }
 
+/* ======================================
+======place section================ */
+.place {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-bottom: 100px;
+}
+.place-text ul{
+    color: #131318;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 26px;
+    padding: 20px;
+}
+
 /* ====================================
 =====footer section================= */
 footer {
@@ -569,5 +585,12 @@ footer hr {
         width: 100%;
         padding: 10px;
         
+    }
+    .place {
+        grid-template-columns: 1fr;
+       
+    }
+    .place-video iframe {
+        width: 100%;
     }
 }
