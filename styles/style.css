@@ -336,6 +336,40 @@ main {
 
 }
 
+/* ====================================
+=====footer section================= */
+footer {
+    padding: 110px 20%;
+    background: rgba(19, 19, 24, 0.05);
+    text-align: center;
+
+}
+.foot-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-logo h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #131318;
+}
+.foot-logo h2 span {
+    color: #FF5400;
+}
+.fa-brands {
+    font-size: 2rem;
+    margin: 20px;
+}
+footer hr {
+    border: 1px solid rgba(19, 19, 24, 0.10);
+    margin: 50px;
+}
+.copy-right {
+    color: #131318;
+    font-size: 16px;
+    font-weight: 300;    
+}
 
 
 
@@ -442,5 +476,8 @@ main {
     }
     .seal p {
         font-size: 1rem;
+    }
+    footer {
+        padding: 50px 20px;
     }
 }
