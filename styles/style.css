@@ -226,6 +226,7 @@ main {
 .choose-text {
     margin-bottom: 48px;
     margin-top: 100px;
+    text-align: center;
 }
 .choose-container {
     display: grid;
@@ -416,8 +417,9 @@ main {
 .place {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 28px;
+    gap: 30px;
     margin-bottom: 100px;
+    margin-top: 100px;
 }
 .place-text ul{
     color: #131318;
@@ -575,6 +577,9 @@ footer hr {
     .center-div{
         width: 100%;
     }
+    .choose-text {
+        text-align: center;
+    }
 
     /* newsletter section */
     .newsletter{
@@ -620,5 +625,29 @@ footer hr {
     /* review */
     .review-card-container {
         grid-template-columns: 1fr;
+    }
+}
+
+
+/* responsive media query for tablet */
+@media screen and (min-width:601px) and (max-width:992px) {
+    header, main {
+        max-width: 100%;
+        padding: 20px;
+    }
+    .popular {
+        flex-direction: column;
+    }
+    .newsletter{
+        grid-template-columns: 1fr;
+    }
+    .place {
+        grid-template-columns: 1fr;
+    }
+    .review-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer {
+        padding: 110px 5%;
     }
 }
